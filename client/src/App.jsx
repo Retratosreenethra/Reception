@@ -36,7 +36,7 @@ import Consulting from "./pages/Consulting";
 import All_sids from "./pages/All_sids";
 import Insurance from "./pages/Insurance";
 import Councelling from "./pages/Counselling";
-import Insurance_CR from "./pages/insurance_cr";
+import Insurance_CR from "./pages/Insurance_CR";
 import Insurance_check from "./pages/insurance_checkout";
 import Insurance_checkout from "./pages/insurance_checkout";
 
