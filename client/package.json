@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite preview --port 80"  // Added start command to run in production
+    "start": "vite preview --port 80"  
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
