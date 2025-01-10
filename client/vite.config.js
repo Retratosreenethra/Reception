@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => {
 
     // Base URL for your app (useful when deploying to subdirectories or custom domains)
     base: mode === 'production' ? '/my-app/' : '/',
-    
+
     // Enable source maps for development (optional)
     build: {
       sourcemap: mode === 'development',  // Enable sourcemaps in dev mode only
@@ -35,6 +35,13 @@ export default defineConfig(({ mode }) => {
     // Optimize the build process
     optimizeDeps: {
       include: ['react', 'react-dom'], // Optimize specific dependencies (e.g., React)
+    },
+
+    // Configure server to listen on all interfaces (0.0.0.0)
+    server: {
+      host: '0.0.0.0',  // Listen on all interfaces for external access
+      port: 3000,       // You can change the port if needed
+      strictPort: true, // Prevent Vite from automatically picking a different port
     },
   };
 });
