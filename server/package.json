@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js", 
-    "dev": "nodemon index.js",  
-    "build": "echo \"No build step defined\" && exit 0" 
+    "start": "node server/index.js", 
+    "dev": "nodemon server/index.js",  
+    "build": "echo \"No build step defined\" && exit 0"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,6 @@
     "sharp": "^0.33.5",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.0",
-    "nodemon": "^2.0.20"  
+    "nodemon": "^2.0.20"
   }
 }
