@@ -1,4 +1,4 @@
-FROM node:16 AS build
+FROM node:18-alpine
 
 WORKDIR /app
 
@@ -10,14 +10,6 @@ COPY . .
 
 RUN npm run build
 
-FROM node:16
-
-RUN npm install -g serve
-
-WORKDIR /app
-
-COPY --from=build /app/build /app/build
-
 EXPOSE 80
 
-CMD ["serve", "-s", "build", "-l", "80"]
+CMD ["npm", "start"]
