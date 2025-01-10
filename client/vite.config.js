@@ -7,6 +7,10 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       'process.env': {},
+      // Conditionally set environment variables for different modes (development vs production)
+      'process.env.API_URL': mode === 'development' 
+        ? 'http://localhost:3000' 
+        : 'https://api.production.com',
     },
     envDir: './',
   };
