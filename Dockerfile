@@ -1,3 +1,4 @@
+
 FROM node:16 AS build
 
 WORKDIR /app
@@ -18,6 +19,6 @@ WORKDIR /app
 
 COPY --from=build /app/build /app/build
 
-EXPOSE 3000)
+EXPOSE 80
 
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["serve", "-s", "build", "-l", "80"]
